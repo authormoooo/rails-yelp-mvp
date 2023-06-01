@@ -1,0 +1,7 @@
+<ul class="list-group, mr-4">
+  <% @restaurants.each do |r| %>
+    <p><%= link_to "#{r.name}", restaurant_path(r) %>
+  <% end %>
+</ul>
+
+<p class="btn btn-warning"><%= link_to 'Add a restaurant', new_restaurant_path %></p>
